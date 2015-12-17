@@ -97,9 +97,9 @@ public class TennisJeu {
     public boolean isEnd(){return end;}
 
     public Player winner(){
-        if(scorePlayer1==50){
+        if(scorePlayer1==50 && isEnd()){
             return player1;
-        }else if(scorePlayer2==50){
+        }else if(scorePlayer2==50 && isEnd()){
             return player2;
         }else{
             return null;
