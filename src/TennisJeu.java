@@ -54,10 +54,12 @@ public class TennisJeu {
             case 40:
                 if(scorePlayer2<40){
                   end=true;
+                    scorePlayer1=50;
                 }else if(scorePlayer2==40){
                     scorePlayer1=50;
                 }else{
                     scorePlayer2=40;
+                    scorePlayer1=40;
                 }
                 break;
             case 50:
